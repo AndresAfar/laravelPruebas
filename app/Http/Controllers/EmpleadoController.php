@@ -34,7 +34,7 @@ class EmpleadoController extends Controller
         $datosEmpleado = request()->except('_token');
         Empleado::insert($datosEmpleado);
         
-        return view('empleado');
+        return view('empleado.index');
     }
 
     /**
